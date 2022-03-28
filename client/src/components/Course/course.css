@@ -1,0 +1,164 @@
+main {
+    background: #f3f4f6;
+    grid-area: main;
+    overflow-y: auto; 
+    height: 100%;
+    margin: 0;
+}
+
+.main_title{
+    display: flex;
+    align-items: center;
+}
+
+.main_title > img {
+    max-height: 150px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.table_responsive {
+    width: 90%;
+    background-color: #efefef33;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.AddNew {
+    width: 90%;
+    overflow: auto;
+    margin: auto;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.action_add_new > a {
+    text-decoration: none;
+    font-family: 'Poly', serif;
+    color: #0BD4A1;
+    overflow: auto;
+    margin: auto;
+    font-weight: bold;
+}
+.action_add_new {
+    background-color:#fff ;
+    border: 0.2px solid #0BD4A1;
+    border-radius: 2px;
+    padding: 0px 2.5px !important;
+}
+
+table {
+    width: 100%;
+    font-size: 13px;
+    color: #444;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+table>thead {
+    background-color: #00bcd4;
+    color: #fff;
+}
+table>thead th {
+    padding: 15px;
+}
+table th,
+table td {
+    border: 1px solid #00000017;
+    padding: 10px 15px;
+}
+table>tbody>tr>td>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px #0003;
+    
+}
+.action_btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.action_btn> a {
+    text-decoration: none;
+    color: #444;
+    display: inline-block;
+    font-weight: bold;
+}
+.trash{
+    color: red !important;
+}
+.action_btn>a:nth-child(1) {
+    border-color: #26a69a;
+}
+.action_btn>a:nth-child(2) {
+    border-color: orange;
+}
+table>tbody>tr {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+#info{
+    display: block;
+    align-items: center;
+    text-align: center;    
+}
+table>tbody>tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+}
+table>tbody>tr:hover{
+    filter: drop-shadow(0px 2px 6px #0002);
+}
+
+.table__pagination {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.table__pagination-item ~ .table__pagination-item {
+    margin-left: 10px;
+}
+
+.table__pagination-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.table__pagination-item.active,
+.table__pagination-item.active:hover {
+    background-color: var(--main-color);
+    color: var(--txt-white);
+    font-weight: 600;
+}
+
+.table__pagination-item:hover {
+    color: var(--txt-white);
+    background-color: var(--second-color);
+}
+
+
+.action_add_new:hover{
+    background-color: #0BD4A1;   
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: all 200ms ;
+}
+
+.action_add_new>a:hover{
+    color:#fff;
+    
+    transition: all 200ms ;
+}

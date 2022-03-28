@@ -1,0 +1,101 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+   
+    
+}
+body{
+    background-color: #2900F5; 
+}
+.FormBody {
+    max-width: 1100px;
+    height: 600px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;  
+    box-shadow: 3px 2px 20px black;
+}
+
+.FormBody > .undraw {
+   width: 500px;
+   display: absolute;
+   padding: 10px;
+   text-align: center;
+}
+
+.Form > input {
+    margin: 4px;
+    text-align: block;
+    width: 100%;
+    outline: none;
+    border-radius:none;
+    border-color:none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.FormBody > .Logo{
+    display: none;
+    position: absolute;
+}
+
+.Form > h2 {
+    align-content: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+.Form > button {
+    width: 100%;
+    display: block;
+    outline: none;
+    background-color: #0BD4A1;
+    margin: 13px 0;
+    font-size:21px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.btn_Cancelar{
+    background-color: red !important;
+}
+
+.Form > button:hover{
+    cursor:pointer;
+    background-color: #0BD4A1;   
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: all 200ms ;
+    color:#fff;
+    transition: all 200ms ;
+}
+
+
+@media screen and  (max-width:800px)
+{
+    .FormBody > .undraw {
+        display: none;
+    }
+    .FormBody {
+        width: 50%;
+        
+    }
+
+    .FormBody >.Logo{
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        width: 42%;
+        left: 30%;
+        top: 2%;
+    }
+}

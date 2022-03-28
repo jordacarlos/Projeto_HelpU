@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "display_name": "Dashboard",
+        "route": "/",
+        "icon": "fa fa-home"
+    },
+    {
+        "id": "2",
+        "display_name": "Monitores",
+        "route": "/Monitores",
+        "icon": "fa fa-user"
+    },
+    {
+        "id": "3",
+        "display_name": "Cursos",
+        "route": "/Cursos",
+        "icon": "fa fa-building-o"
+    },
+    {
+        "id": "4",
+        "display_name": "Aulas Marcadas",
+        "route": "/Aulas",
+        "icon": "fa fa-archive"
+    },
+    {
+        "id": "5",
+        "display_name": "Analytics",
+        "route": "/analytics",
+        "icon": "fa fa-bar-chart"
+    },
+    {
+        "id": "6",
+        "display_name": "Categorias",
+        "route": "/categ",
+        "icon": "fa fa-question"
+    },
+    {
+        "id": "7",
+        "display_name": "Sair",
+        "route": "/",
+        "icon": "fa fa-sign-out"
+    }
+]
